@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="StockLearn 股票投資入門學習筆記，整理股票基礎知識與技術指標。"
+    />
+    <title>StockLearn｜股票投資學習筆記</title>
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">跳至主要內容</a>
+    <header class="site-header">
+      <div class="wrap nav">
+        <a class="brand" href="#home" aria-label="StockLearn 首頁"
+          ><span class="logo">S<span>↗</span></span
+          ><span>StockLearn<small>投資學習筆記</small></span></a
+        >
+        <nav aria-label="主要導覽">
+          <a href="#home" data-nav="home">首頁</a
+          ><a href="#learn" data-nav="learn">知識文章</a
+          ><a href="#glossary" data-nav="glossary">投資名詞</a
+          ><a href="#about" data-nav="about">關於本站</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <section id="home" class="hero wrap route">
+        <div class="hero-copy">
+          <p class="eyebrow">LEARN SMARTER · INVEST WISER</p>
+          <h1>從零開始，<br /><em>讀懂股票投資。</em></h1>
+          <p>
+            用簡單的文字整理股票基礎與技術指標，把學習變成每天都能累積的一小步。
+          </p>
+          <div class="actions">
+            <a class="btn primary" href="#learn"
+              >開始探索 <span aria-hidden="true">↗</span></a
+            ><a class="btn ghost" href="#glossary">查詢投資名詞</a>
+          </div>
+          <p class="disclaimer">本站僅供學習，不構成任何投資建議。</p>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="art-top">
+            <span>MARKET LEARNING</span><span class="dot"></span>
+          </div>
+          <div class="mini-label">知識累積曲線</div>
+          <svg viewBox="0 0 440 250" role="img">
+            <defs>
+              <linearGradient id="fillchart" x1="0" x2="0" y1="0" y2="1">
+                <stop offset="0" stop-color="#20a987" stop-opacity=".26" />
+                <stop offset="1" stop-color="#20a987" stop-opacity="0" />
+              </linearGradient>
+            </defs>
+            <path
+              d="M20 205 H420 M20 150 H420 M20 95 H420 M20 40 H420"
+              stroke="#dceae5"
+              stroke-dasharray="5 7"
+            />
+            <path
+              d="M20 215 L70 198 L107 209 L145 165 L190 180 L230 130 L267 145 L305 88 L344 105 L385 47 L420 35 L420 235 L20 235 Z"
+              fill="url(#fillchart)"
+            />
+            <polyline
+              points="20,215 70,198 107,209 145,165 190,180 230,130 267,145 305,88 344,105 385,47 420,35"
+              fill="none"
+              stroke="#109575"
+              stroke-width="5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <circle
+              cx="420"
+              cy="35"
+              r="9"
+              fill="#109575"
+              stroke="white"
+              stroke-width="5"
+            />
+          </svg>
+          <div class="art-bottom">
+            <span>每日學一點</span><strong>進步看得見 ↗</strong>
+          </div>
+        </div>
+      </section>
+      <section id="features" class="wrap features route">
+        <div>
+          <span class="feature-icon">▤</span><strong>入門友善</strong>
+          <p>以淺顯的語言解釋概念</p>
+        </div>
+        <div>
+          <span class="feature-icon">⌁</span><strong>指標教學</strong>
+          <p>一次認識常見技術工具</p>
+        </div>
+        <div>
+          <span class="feature-icon">⌕</span><strong>快速查詢</strong>
+          <p>透過搜尋找到想學的內容</p>
+        </div>
+      </section>
+      <section id="learn" class="wrap content-section route">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">KNOWLEDGE LIBRARY</p>
+            <h2>探索投資知識</h2>
+            <p>從基本名詞到技術分析，按照自己的步調學習。</p>
+          </div>
+          <span class="count" id="articleCount">共 8 篇文章</span>
+        </div>
+        <div class="toolbar">
+          <label class="search"
+            ><span aria-hidden="true">⌕</span
+            ><input
+              id="searchInput"
+              type="search"
+              placeholder="搜尋文章或關鍵字..."
+              autocomplete="off"
+              aria-label="搜尋文章"
+          /></label>
+          <div class="filters" role="group" aria-label="文章分類">
+            <button
+              type="button"
+              data-filter="全部"
+              class="active"
+              aria-pressed="true"
+            >
+              全部</button
+            ><button type="button" data-filter="股票入門" aria-pressed="false">
+              股票入門</button
+            ><button type="button" data-filter="技術指標" aria-pressed="false">
+              技術指標</button
+            ><button type="button" data-filter="投資觀念" aria-pressed="false">
+              投資觀念
+            </button>
+          </div>
+        </div>
+        <div id="cards" class="cards" aria-live="polite"></div>
+        <div id="empty" class="empty" hidden>
+          找不到符合的文章，試試其他關鍵字或分類。
+        </div>
+      </section>
+      <section id="glossary" class="wrap content-section route">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">QUICK REFERENCE</p>
+            <h2>投資名詞小字典</h2>
+            <p>把常聽到的投資名詞一次搞懂。</p>
+          </div>
+        </div>
+        <label class="search glossary-search"
+          ><span aria-hidden="true">⌕</span
+          ><input
+            id="glossarySearch"
+            type="search"
+            placeholder="搜尋名詞..."
+            aria-label="搜尋投資名詞"
+        /></label>
+        <div class="glossary-grid" id="glossaryList" aria-live="polite"></div>
+      </section>
+      <section id="about" class="wrap about content-section route">
+        <p class="eyebrow">ABOUT THIS PROJECT</p>
+        <h2>關於 StockLearn</h2>
+        <p>
+          StockLearn 是一個以股票入門教育為主的靜態網頁練習專案，使用
+          HTML、CSS、JavaScript 製作，透過
+          <code>AGENTS.md</code> 定義網站規則，讓 AI
+          可以遵照一致的版面、內容結構與資料格式持續擴充文章。
+        </p>
+        <p>
+          本站文章僅用於課堂學習示範，不提供即時報價、個股推薦或交易訊號。所有內容請自行查證，投資涉及風險。
+        </p>
+        <a class="btn ghost" href="#learn">瀏覽教學文章 →</a>
+      </section>
+      <section id="article" class="wrap article-route route" hidden>
+        <a class="backlink" href="#learn">← 返回文章列表</a>
+        <article id="articleContent"></article>
+        <div class="article-bottom">
+          <a class="btn ghost" href="#learn">← 探索更多文章</a>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="wrap footer-inner">
+        <span class="footer-brand">S↗ StockLearn</span
+        ><span>學習用途 · 非投資建議</span><span>© 2026 StockLearn</span>
+      </div>
+    </footer>
+    <script src="assets/app.js" defer></script>
+  </body>
+</html>
